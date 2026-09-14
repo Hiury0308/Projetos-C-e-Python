@@ -19,5 +19,5 @@ int main()
     }
     else
     printf("Nenhum aluno ficara de fora")
-
+    return 0;
 }
