@@ -15,4 +15,5 @@ int main()
     //saida para o usuario
     printf("O valor da compra sem taxa: R$ %.2f \n", valorcompra);
     printf("O valor da compra com taxa: R$ %.2f \n", resultado);
+    return 0;
 }
