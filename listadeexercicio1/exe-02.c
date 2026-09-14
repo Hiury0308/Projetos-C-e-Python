@@ -18,4 +18,5 @@ int main()
 
     //Saida com o resultado
     printf("A média aritmética é: %.1f\n", media);
+    return 0;
 }
