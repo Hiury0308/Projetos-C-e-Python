@@ -10,8 +10,8 @@ int main()
     scanf("%d", &dias);
 
     //Operações matematicas
-    valor_para_conta = dias * 30
-    valor_com_desconto = valor_para_conta / 10
+    valor_para_conta = dias * 30;
+    valor_com_desconto = valor_para_conta / 10;
         
     //saida para o usuario
     printf("Valor total: R$%.2d\n", valor_para_conta);
