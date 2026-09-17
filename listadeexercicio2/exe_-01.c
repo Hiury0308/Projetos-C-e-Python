@@ -23,5 +23,5 @@ int main()
     }
     else
         printf("reprovado");
-    
+    return 0;
 }

@@ -11,10 +11,11 @@ int main()
    
     
     //Saida pro usuario
-    if (numero < 10)
+    if (numero > 100)
     {
-        printf ("%.0f é menor que dez", numero);  
+        printf ("%.0f", numero);  
     }
     else
+    printf ("0");
     return 0;
 }

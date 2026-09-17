@@ -3,18 +3,19 @@
 int main() 
 {
     //Declaração das variaveis
-    float numero;
+    int senha;
 
     //Recebimento dos valores pelo usuario
-    printf("Digite um numero: ");
-    scanf("%f", &numero);
+    printf("Digite a senha: ");
+    scanf("%d", &senha);
    
     
     //Saida pro usuario
-    if (numero < 10)
+    if (senha == 12345678)
     {
-        printf ("%.0f é menor que dez", numero);  
+        printf ("Acesso concedido");  
     }
     else
+    printf ("Acesso negado");
     return 0;
 }
