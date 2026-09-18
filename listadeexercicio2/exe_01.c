@@ -14,11 +14,11 @@ int main()
     //Saida pro usuario
     if (numero1 > numero2)
     {
-        printf ("Ordem crescente: \n%f\n", numero2, numero1);
+        printf ("Ordem crescente: \n%.0f\n%.0f", numero2, numero1);
     }
     else if (numero1 < numero2)
     {
-        printf ("Ordem crescente: \n%f\n", numero1, numero2);
+        printf ("Ordem crescente: \n%.0f\n%.0f", numero1, numero2);
     }
     else
     printf ("numeros iguais, operação invalida");

@@ -15,7 +15,7 @@ int main()
     
 
     //Saida pro usuario
-    if (numero1 + numero2 == numero3)
+    if (numero1 + numero2 < numero3)
     {
         printf ("ok");
     }
