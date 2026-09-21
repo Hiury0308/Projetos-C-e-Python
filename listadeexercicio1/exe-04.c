@@ -4,15 +4,15 @@ int main()
 {
 
     //Declaração das variaveis 
-    float numero;
+    float NUMERO;
 
     //Recebimento dos dados
     printf("Digite o primeiro número: ");
-    scanf("%f", &numero);
+    scanf("%f", &NUMERO);
 
     //Saida dos resultados
-    printf("O numero anterior é: %.1f\n", numero - 1);
-    printf("O seu numero é número: %.1f\n", numero);
-    printf("O proximo número é: %.1f\n", numero + 1);
+    printf("O numero anterior é: %.1f\n", NUMERO - 1);
+    printf("O seu numero é número: %.1f\n", NUMERO);
+    printf("O proximo número é: %.1f\n", NUMERO + 1);
     return 0;
 }

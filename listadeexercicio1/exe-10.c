@@ -3,17 +3,17 @@
 int main() 
 {
     //definição das variaveis
-    float valor;
+    float VALOR;
 
     //recebimento do valor pelo usuario
     printf("Insira o valor do produto: ");
-    scanf("%f", &valor);
+    scanf("%f", &VALOR);
 
     //processamento e saida dos resultados
-    printf("O valor ao decorrer de 3 anos considerando uma redução no valor original é: R$%.2f\n", valor - (valor * 0.30));
-    valor = valor - (valor * 0.10);
-    valor = valor - (valor * 0.10);
-    valor = valor - (valor * 0.10);
-    printf("O valor ao decorrer de 3 anos reduzinho sobre o novo valor é: %.2f\n", valor);
+    printf("O valor ao decorrer de 3 anos considerando uma redução no valor original é: R$%.2f\n", VALOR - (VALOR * 0.30));
+    VALOR = VALOR - (VALOR * 0.10);
+    VALOR = VALOR - (VALOR * 0.10);
+    VALOR = VALOR - (VALOR * 0.10);
+    printf("O valor ao decorrer de 3 anos reduzinho sobre o novo valor é: %.2f\n", VALOR);
     return 0;
 }

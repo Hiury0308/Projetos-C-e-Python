@@ -3,22 +3,22 @@
 int main() 
 {
     //Declaração das variaveis
-    float numero1, numero2;
+    float NUMERO_1, NUMERO_2;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%f", &numero1);
+    scanf("%f", &NUMERO_1);
     printf("Digite o segundo numero: ");
-    scanf("%f", &numero2);
-    
+    scanf("%f", &NUMERO_2);
+
     //saida para o usuario usando if
-    if (numero1 > numero2)
+    if (NUMERO_1 > NUMERO_2)
     {
-        printf("Primeiro numero é maior: %f", numero1);
+        printf("Primeiro numero é maior: %f", NUMERO_1);
     }
-    else if (numero1 < numero2)
+    else if (NUMERO_1 < NUMERO_2)
     {
-        printf("Segundo numero é maior: %f", numero2);
+        printf("Segundo numero é maior: %f", NUMERO_2);
     }
     else
         printf("Numeros iguais");

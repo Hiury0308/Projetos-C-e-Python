@@ -3,21 +3,21 @@
 int main() 
 {
     //declaração dar variaveis
-    int escolha;
-    float numero1, numero2, resultado;
+    int ESCOLHA;
+    float NUMERO_1, NUMERO_2, RESULTADO;
 
     //inputs do usuario
     printf("Digite o primeiro número: ");
-    scanf("%f", &numero1);
+    scanf("%f", &NUMERO_1);
     printf("Digite o primeiro número: ");
-    scanf("%f", &numero2);
+    scanf("%f", &NUMERO_2);
     printf("Escolha a operação: \n1 - soma\n2 - sub\n3 - vezes\n4 - divisao\n\n");
-    scanf("%d", &escolha);
+    scanf("%d", &ESCOLHA);
 
     //Bloqueador para contas de divisor com 0
-    if (numero2 == 0) 
+    if (NUMERO_2 == 0) 
     {
-        if (escolha == 4) 
+        if (ESCOLHA == 4) 
         {
         printf("\nNão é permitido dividar por zero");
         return 0;
@@ -25,25 +25,25 @@ int main()
     }
 
     //Retorno dos resultados baseado na escolha do usuario
-    if (escolha == 1) 
+    if (ESCOLHA == 1) 
     {
-        resultado = numero1 + numero2;
-        printf("A soma dos numeros é: %f\n", resultado);
+        RESULTADO = NUMERO_1 + NUMERO_2;
+        printf("A soma dos numeros é: %f\n", RESULTADO);
     }
-    else if (escolha == 2) 
+    else if (ESCOLHA == 2) 
     {
-        resultado = numero1 - numero2;
-        printf("A subtração dos numeros é: %f\n", resultado);
+        RESULTADO = NUMERO_1 - NUMERO_2;
+        printf("A subtração dos numeros é: %f\n", RESULTADO);
     }
-    else if (escolha == 3) 
+    else if (ESCOLHA == 3) 
     {
-        resultado = numero1 * numero2;
-        printf("A mutiplicação dos numeros é: %f\n", resultado);
+        RESULTADO = NUMERO_1 * NUMERO_2;
+        printf("A mutiplicação dos numeros é: %f\n", RESULTADO);
     }
-    else if (escolha == 4) 
+    else if (ESCOLHA == 4) 
     {
-        resultado = numero1 / numero2;
-        printf("A divisão dos numeros é: %f\n", resultado);
+        RESULTADO = NUMERO_1 / NUMERO_2;
+        printf("A divisão dos numeros é: %f\n", RESULTADO);
     }
     else printf("Nenhuma operação foi escolhida");
     return 0;

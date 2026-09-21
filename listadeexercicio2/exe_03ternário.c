@@ -3,13 +3,13 @@
 int main() 
 {
     //Declaração das variaveis
-    float numero;
+    float NUMERO;
 
     //Recebimento dos valores pelo usuario
     printf("Digite um numero: ");
-    scanf("%f", &numero);
+    scanf("%f", &NUMERO);
    
-    
     //Saida pro usuario usando ternario
-    numero > 100 ? printf("%.0f", numero) : printf("0");
+    NUMERO > 100 ? printf("%.0f", NUMERO) : printf("0");
+    return 0;
 }

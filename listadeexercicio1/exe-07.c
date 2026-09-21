@@ -3,21 +3,23 @@
 int main() 
 {
     //Declaração das variaveis
-    int alunos, capacidade;
+    int ALUNOS;
 
     //Recebimento do numero de alunos
     printf("Digite a quantidade de alunos: ");
-    scanf("%d", &alunos);
+    scanf("%d", &ALUNOS);
 
     //Definição do maximo da capacidade
-    capacidade = 90;
+    #define CAPACIDADE 90
 
     //saida para o ususario
-    if ((alunos > capacidade));
+    if ((ALUNOS > CAPACIDADE))
     {
-    printf("Alunos que ficarão de fora: %d", alunos - capacidade);
+    printf("Alunos que ficarão de fora: %d", ALUNOS - CAPACIDADE);
     }
     else
-    printf("Nenhum aluno ficara de fora")
+    {
+        printf("Nenhum aluno ficara de fora");
+    }
     return 0;
 }

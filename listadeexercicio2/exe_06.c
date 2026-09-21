@@ -3,15 +3,14 @@
 int main() 
 {
     //Declaração das variaveis
-    int senha;
+    int SENHA;
 
     //Recebimento dos valores pelo usuario
     printf("Digite a senha: ");
-    scanf("%d", &senha);
+    scanf("%d", &SENHA);
    
-    
     //Saida pro usuario
-    if (senha == 12345678)
+    if (SENHA == 12345678)
     {
         printf ("Acesso concedido");  
     }

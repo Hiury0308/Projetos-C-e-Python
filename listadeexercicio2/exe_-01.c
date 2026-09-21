@@ -3,21 +3,21 @@
 int main() 
 {
     //Declaração das variaveis
-    float numero1, numero2, numero3, media;
+    float NUMERO_1, NUMERO_2, NUMERO_3, MEDIA;
 
     //Recebimento dos valores pelo usuario
     printf("Digite a primeira nota: ");
-    scanf("%f", &numero1);
+    scanf("%f", &NUMERO_1);
     printf("Digite a segunda nota: ");
-    scanf("%f", &numero2);
+    scanf("%f", &NUMERO_2);
     printf("Digite a terceira nota: ");
-    scanf("%f", &numero3);
+    scanf("%f", &NUMERO_3);
 
     //Operação para chegar ao resultado
-    media = (numero1 + numero2 + numero3) / 3;
+    MEDIA = (NUMERO_1 + NUMERO_2 + NUMERO_3) / 3;
 
     //Saida com o resultado
-    if (media > 6)
+    if (MEDIA > 6)
     {
         printf("Aprovado");
     }

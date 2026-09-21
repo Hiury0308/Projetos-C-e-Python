@@ -2,27 +2,26 @@
 
 int main() 
 {
-
     //Variaveis usadas no codigo
-    #define camisa_p_valor 15 
-    #define camisa_m_valor 20 
-    #define camisa_g_valor 25
-    int camisaP, camisaM, camisaG,  resultadoG, resultadoM, resultadoP;
+    #define CAMISA_P_VALOR 15 
+    #define CAMISA_M_VALOR 20 
+    #define CAMISA_G_VALOR 25
+    int CAMISA_P, CAMISA_M, CAMISA_G,  RESULTADO_G, RESULTADO_M, RESULTADO_P;
 
     //Recebimento dos valores pelo usuario
     printf("Digite a quantidade de camisas Pequenas: ");
-    scanf("%d", &camisaP);
+    scanf("%d", &CAMISA_P);
     printf("Digite a quantidade de camisas Médias: ");
-    scanf("%d", &camisaM);
+    scanf("%d", &CAMISA_M);
     printf("Digite a quantidade de camisas Grandes: ");
-    scanf("%d", &camisaG);
+    scanf("%d", &CAMISA_G);
 
     //Operações matematicas
-    resultadoG = camisaG * camisa_g_valor;
-    resultadoM = camisaM * camisa_m_valor;
-    resultadoP = camisaP * camisa_p_valor;
+    RESULTADO_G = CAMISA_G * CAMISA_G_VALOR;
+    RESULTADO_M = CAMISA_M * CAMISA_M_VALOR;
+    RESULTADO_P = CAMISA_P * CAMISA_P_VALOR;
 
     //saida do resultado
-    printf("Seu total é: %.0d", resultadoG + resultadoM + resultadoP);
+    printf("Seu total é: %.0d", RESULTADO_G + RESULTADO_M + RESULTADO_P);
     return 0;
 }

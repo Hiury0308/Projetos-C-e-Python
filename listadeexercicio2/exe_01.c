@@ -3,22 +3,22 @@
 int main() 
 {
     //Declaração das variaveis
-    float numero1, numero2;
+    float NUMERO_1, NUMERO_2;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%f", &numero1);
+    scanf("%f", &NUMERO_1);
     printf("Digite o segundo numero: ");
-    scanf("%f", &numero2);
-    
+    scanf("%f", &NUMERO_2);
+
     //Saida pro usuario
-    if (numero1 > numero2)
+    if (NUMERO_1 > NUMERO_2)
     {
-        printf ("Ordem crescente: \n%.0f\n%.0f", numero2, numero1);
+        printf ("Ordem crescente: \n%.0f\n%.0f", NUMERO_2, NUMERO_1);
     }
-    else if (numero1 < numero2)
+    else if (NUMERO_1 < NUMERO_2)
     {
-        printf ("Ordem crescente: \n%.0f\n%.0f", numero1, numero2);
+        printf ("Ordem crescente: \n%.0f\n%.0f", NUMERO_1, NUMERO_2);
     }
     else
     printf ("numeros iguais, operação invalida");

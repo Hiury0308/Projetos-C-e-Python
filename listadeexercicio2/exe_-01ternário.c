@@ -3,16 +3,17 @@
 int main() 
 {
     //Declaração das variaveis
-    float numero1, numero2, numero3, media;
+    float NUMERO_1, NUMERO_2, NUMERO_3;
 
     //Recebimento dos valores pelo usuario
     printf("Digite a primeira nota: ");
-    scanf("%f", &numero1);
+    scanf("%f", &NUMERO_1);
     printf("Digite a segunda nota: ");
-    scanf("%f", &numero2);
+    scanf("%f", &NUMERO_2);
     printf("Digite a terceira nota: ");
-    scanf("%f", &numero3);
+    scanf("%f", &NUMERO_3);
 
     //Operação em ternário
-    printf((numero1 + numero2 + numero3) / 3 > 6 ? "Aprovado" : "Reprovado");
+    printf((NUMERO_1 + NUMERO_2 + NUMERO_3) / 3 >= 6 ? "Aprovado" : "Reprovado");
+    return 0;
 }

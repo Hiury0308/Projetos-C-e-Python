@@ -1,20 +1,20 @@
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() 
-{
-    //Declaração das variaveis
-    float numero;
-
-    //Recebimento dos valores pelo usuario
-    printf("Digite um numero: ");
-    scanf("%f", &numero);
-   
-    
-    //Saida pro usuario
-    if (numero < 10)
+    int main() 
     {
-        printf ("%.0f é menor que dez", numero);  
+        //Declaração das variaveis
+        float NUMERO;
+
+        //Recebimento dos valores pelo usuario
+        printf("Digite um numero: ");
+        scanf("%f", &NUMERO);
+    
+        
+        //Saida pro usuario
+        if (NUMERO < 10)
+        {
+            printf ("%.0f é menor que dez", NUMERO);  
+        }
+        else
+        return 0;
     }
-    else
-    return 0;
-}
