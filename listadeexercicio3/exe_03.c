@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() 
 {
@@ -20,11 +21,11 @@ int main()
     //Saida pro usuario
     if(!(NUMERO_1 < NUMERO_2) && (NUMERO_3 == NUMERO_4 && NUMERO_5 < NUMERO_1) || !(false))
     {
-        printf("Verdadeiro");
+        printf("verdadeiro");
     }
     else
     {
-        printf("Falso");
+        printf("falso");
     }
     return 0;
 }

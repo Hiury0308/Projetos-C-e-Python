@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main() 
 {
     //Declaração das variaveis
-    float NUMERO_1, NUMERO_2, NUMERO_3, NUMERO_4, NUMERO_5;
+    float NUMERO_1, NUMERO_2, NUMERO_3;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
@@ -13,19 +12,15 @@ int main()
     scanf("%f", &NUMERO_2);
     printf("Digite o terceiro numero: ");
     scanf("%f", &NUMERO_3);
-    printf("Digite o quarto numero: ");
-    scanf("%f", &NUMERO_4);
-    printf("Digite o quinto numero: ");
-    scanf("%f", &NUMERO_5);
 
     //Saida pro usuario
-    if(!(NUMERO_1 < NUMERO_2) && (NUMERO_3 == NUMERO_4 && NUMERO_5 < NUMERO_1) || !(false))
+    if(NUMERO_1 > NUMERO_2 || NUMERO_1 > NUMERO_3)
     {
-        printf("Verdadeiro");
+        printf("O primeiro número digitado é maior que pelo menos um dos outros dois números digitados");
     }
     else
     {
-        printf("Falso");
+        printf("Ele é menor que os dois números digitados");
     }
     return 0;
 }

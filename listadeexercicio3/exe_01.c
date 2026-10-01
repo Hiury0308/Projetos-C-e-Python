@@ -12,13 +12,13 @@ int main()
     scanf("%f", &NUMERO_2);
 
     //Saida pro usuario
-    if(NUMERO_1 > 10 && NUMERO_2 > 30)
+    if(NUMERO_1 == 1 && NUMERO_2 == 1)
     {
-        printf("A");
+        printf("%.0f", NUMERO_1 + NUMERO_2);
     }
     else
     {
-        printf("B");
+        printf("%.0f", NUMERO_1 - NUMERO_2);
     }
     return 0;
 }
