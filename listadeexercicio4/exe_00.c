@@ -17,5 +17,6 @@ int main()
 
     //Saida pro usuario
     printf("A soma dos restos é: %d\n", (NUMERO_1 % NUMERO_2) + (NUMERO_3 % NUMERO_4));
+    
     return 0;
 }
