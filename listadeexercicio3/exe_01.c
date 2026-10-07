@@ -13,12 +13,10 @@ int main()
 
     //Saida pro usuario
     if(NUMERO_1 == 1 && NUMERO_2 == 1)
-    {
         printf("%.0f", NUMERO_1 + NUMERO_2);
-    }
+
     else
-    {
         printf("%.0f", NUMERO_1 - NUMERO_2);
-    }
+
     return 0;
 }

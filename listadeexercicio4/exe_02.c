@@ -11,12 +11,8 @@ int main()
 
     //Saida pro usuario
     if(ANO % 400 == 0 || ANO % 4 == 0 && ANO % 100 != 0)
-    {
         printf("O ano digitado é bissexto");
-    }
     else
-    {
         printf("O ano digitado não é bissexto");
-    }
     return 0;
 }

@@ -17,7 +17,10 @@ int main()
     media = (nota_1 + nota_2 + nota_3) / 3;
 
     // Saída com o resultado
-    printf("A média aritmética é: %.1f\n", media);
+    if (media > 6)
+        printf("Aprovado");
+    else
+        printf("Reprovado");
 
     return 0;
 }

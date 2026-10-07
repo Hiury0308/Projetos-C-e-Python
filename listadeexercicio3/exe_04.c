@@ -11,12 +11,10 @@ int main()
     
     //Saida pro usuario
     if(NUMERO_1 == 1 || NUMERO_1 == 2 || NUMERO_1 == 3)
-    {
         printf("Numero valido");
-    }
+
     else
-    {
         printf("Numero invalido");
-    }
+
     return 0;
 }

@@ -15,14 +15,7 @@ int main()
     printf("Digite o quarto numero: ");
     scanf("%d", &NUMERO_4);
 
-    //Define resultados como constantes
-    #define RESULTADO_1 (NUMERO_1  % NUMERO_2)
-    #define RESULTADO_2 (NUMERO_3  % NUMERO_4)
-    #define RESULTADO_FINAL (RESULTADO_1 + RESULTADO_2)
-
     //Saida pro usuario
-    printf("%d", RESULTADO_1);
-    printf("%d", RESULTADO_2);
-    printf("%d", RESULTADO_FINAL);
+    printf("A soma dos restos é: %d\n", (NUMERO_1 % NUMERO_2) + (NUMERO_3 % NUMERO_4));
     return 0;
 }

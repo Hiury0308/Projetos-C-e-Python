@@ -3,7 +3,7 @@
 int main()
 {
     // Declaração das variáveis
-    float nota_1, nota_2, nota_3, media;
+    float nota_1, nota_2, nota_3;
 
     // Recebimento dos valores pelo usuário
     printf("Digite a primeira nota: ");
@@ -13,11 +13,8 @@ int main()
     printf("Digite a terceira nota: ");
     scanf("%f", &nota_3);
 
-    // Operação para chegar ao resultado
-    media = (nota_1 + nota_2 + nota_3) / 3;
-
-    // Saída com o resultado
-    printf("A média aritmética é: %.1f\n", media);
+    // Operação em ternário
+    printf((nota_1 + nota_2 + nota_3) / 3 >= 6 ? "Aprovado" : "Reprovado");
 
     return 0;
 }

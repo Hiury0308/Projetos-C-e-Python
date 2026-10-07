@@ -13,12 +13,10 @@ int main()
 
     //Saida pro usuario
     if(ALTURA > 180 && IDADE > 18)
-    {
         printf("Acesso permitido");
-    }
+
     else
-    {
         printf("Acesso negado");
-    }
+
     return 0;
 }

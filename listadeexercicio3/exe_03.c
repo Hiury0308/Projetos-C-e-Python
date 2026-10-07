@@ -20,12 +20,10 @@ int main()
 
     //Saida pro usuario
     if(!(NUMERO_1 < NUMERO_2) && (NUMERO_3 == NUMERO_4 && NUMERO_5 < NUMERO_1) || !(false))
-    {
         printf("verdadeiro");
-    }
+
     else
-    {
         printf("falso");
-    }
+
     return 0;
 }

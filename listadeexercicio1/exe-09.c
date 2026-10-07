@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
-    //variaveis utilizadas no codigo
-    int HORAS;
-    float DESCONTO;
+    // Declaração das variáveis
+    int horas_trabalhadas;
+    float percentual_desconto;
 
-    //recebimento da quantia de dias
-    printf("Informe a quantidade de horas trabalhada: ");
-    scanf("%d", &HORAS);
+    // Recebimento da quantidade de horas e do desconto
+    printf("Informe a quantidade de horas trabalhadas: ");
+    scanf("%d", &horas_trabalhadas);
     printf("Informe a porcentagem de desconto: ");
-    scanf("%f", &DESCONTO);
+    scanf("%f", &percentual_desconto);
 
-    //Saida para o usuario
-    printf("Seu salario bruto é: R$%d\n", HORAS * 20); 
-    printf("O valor com descontos é: R$%.2f\n", (HORAS * 20) *  (DESCONTO / 100));
+    // Saída para o usuário
+    printf("Seu salário bruto é: R$%d\n", horas_trabalhadas * 20);
+    printf("O valor com descontos é: R$%.2f\n", (horas_trabalhadas * 20) * (percentual_desconto / 100));
+
+    return 0;
 }

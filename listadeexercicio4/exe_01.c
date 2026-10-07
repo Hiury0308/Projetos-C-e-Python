@@ -11,12 +11,8 @@ int main()
 
     //Saida pro usuario
     if(NUMERO_1 % 2 == 0)
-    {
         printf("O número digitado é par");
-    }
     else
-    {
         printf("O número digitado é impar");
-    }
     return 0;
 }

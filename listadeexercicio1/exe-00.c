@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
-    //Declaração das variaveis
-    float VALOR_COMPRA, RESULTADO;
+    // Declaração das variáveis
+    float valor_compra, valor_com_taxa;
 
-    //Recebimento dos valores
+    // Recebimento dos valores
     printf("Digite o valor da compra: ");
-    scanf("%f", &VALOR_COMPRA);
+    scanf("%f", &valor_compra);
 
-    //operação necessaria para o resultado
-    RESULTADO = VALOR_COMPRA + 10;
+    // Operação necessária para o resultado
+    valor_com_taxa = valor_compra + 10;
 
-    //saida para o usuario
-    printf("O valor da compra sem taxa: R$ %.2f \n", VALOR_COMPRA);
-    printf("O valor da compra com taxa: R$ %.2f \n", RESULTADO);
+    // Saída para o usuário
+    printf("O valor da compra sem taxa: R$ %.2f\n", valor_compra);
+    printf("O valor da compra com taxa: R$ %.2f\n", valor_com_taxa);
+
     return 0;
 }

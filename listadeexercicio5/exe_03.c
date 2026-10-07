@@ -1,36 +1,27 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
     //Declaração das variaveis
-    float NOTA;
+    float nota;
 
     //Recebimento dos valores pelo usuario
     printf("Digite a nota do aluno: ");
-    scanf("%f", &NOTA);
-    
-
+    scanf("%f", &nota);
 
     //Saida pro usuario
-    if(NOTA >= 9)
-    {
+    if(nota < 0 || nota > 10)
+        printf("Nota invalida");
+    else if(nota >= 9)
         printf("A");
-    }
-    else if(NOTA >= 7.5 && NOTA <= 9)
-    {
+    else if(nota >= 7.5)
         printf("B");
-    }
-    else if(NOTA >= 6 && NOTA <= 7.5)
-    {
+    else if(nota >= 6)
         printf("C");
-    }
-    else if(NOTA >= 4 && NOTA <= 6)
-    {
+    else if(nota >= 4)
         printf("D");
-    }
     else
-    {
         printf("E");
-    }
+
     return 0;
 }

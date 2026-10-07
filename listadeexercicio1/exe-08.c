@@ -1,21 +1,22 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
-    //variaveis utilizadas no codigo
-    int DIAS, VALOR_PARA_CONTA, VALOR_COM_DESCONTO;
+    // Declaração das variáveis
+    int dias_trabalhados, valor_bruto, valor_desconto;
 
-    //recebimento da quantia de dias
+    // Recebimento da quantia de dias
     printf("Digite a quantia de dias trabalhados: ");
-    scanf("%d", &DIAS);
+    scanf("%d", &dias_trabalhados);
 
-    //Operações matematicas
-    VALOR_PARA_CONTA = DIAS * 30;
-    VALOR_COM_DESCONTO = VALOR_PARA_CONTA / 10;
-        
-    //saida para o usuario
-    printf("Valor total: R$%.2d\n", VALOR_PARA_CONTA);
-    printf("Valor do descontos: R$%.2d\n", VALOR_COM_DESCONTO);
-    printf("Valor pós desconto: R$%.2d\n", VALOR_PARA_CONTA - VALOR_COM_DESCONTO);
+    // Operações matemáticas
+    valor_bruto = dias_trabalhados * 30;
+    valor_desconto = valor_bruto / 10;
+
+    // Saída para o usuário
+    printf("Valor total: R$%d\n", valor_bruto);
+    printf("Valor do desconto: R$%d\n", valor_desconto);
+    printf("Valor pós-desconto: R$%d\n", valor_bruto - valor_desconto);
+
     return 0;
 }

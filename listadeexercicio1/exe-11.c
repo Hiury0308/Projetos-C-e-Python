@@ -1,27 +1,27 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
-    //definição das variaveis
-    float A, B, C;
+    // Declaração das variáveis
+    float valor_a, valor_b, auxiliar;
 
-    //proteção inicial contra lixo de memoria
-    C = 0;
+    // Proteção inicial contra lixo de memória
+    auxiliar = 0;
 
-    //Recebimentod dos dados pelo usuario
+    // Recebimento dos dados pelo usuário
     printf("Digite o valor de A: ");
-    scanf("%f", &A);
+    scanf("%f", &valor_a);
     printf("Digite o valor de B: ");
-    scanf("%f", &B);
+    scanf("%f", &valor_b);
 
-    //processamento para troca dos valors
-    C = A;
-    A = B;
-    B = C;
+    // Processamento para troca dos valores
+    auxiliar = valor_a;
+    valor_a = valor_b;
+    valor_b = auxiliar;
 
-    //saida do resultado
-    printf("Valor A: %f\n", A);
-    printf("Valor B: %f\n", B);
+    // Saída do resultado
+    printf("Valor A: %f\n", valor_a);
+    printf("Valor B: %f\n", valor_b);
+
     return 0;
 }
-    

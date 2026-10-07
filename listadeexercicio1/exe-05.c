@@ -1,27 +1,31 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
-    //Variaveis usadas no codigo
-    #define CAMISA_P_VALOR 15 
-    #define CAMISA_M_VALOR 20 
+    // Definição dos valores das camisas
+    #define CAMISA_P_VALOR 15
+    #define CAMISA_M_VALOR 20
     #define CAMISA_G_VALOR 25
-    int CAMISA_P, CAMISA_M, CAMISA_G,  RESULTADO_G, RESULTADO_M, RESULTADO_P;
 
-    //Recebimento dos valores pelo usuario
+    // Declaração das variáveis
+    int quantidade_camisas_p, quantidade_camisas_m, quantidade_camisas_g;
+    int subtotal_p, subtotal_m, subtotal_g;
+
+    // Recebimento dos valores pelo usuário
     printf("Digite a quantidade de camisas Pequenas: ");
-    scanf("%d", &CAMISA_P);
+    scanf("%d", &quantidade_camisas_p);
     printf("Digite a quantidade de camisas Médias: ");
-    scanf("%d", &CAMISA_M);
+    scanf("%d", &quantidade_camisas_m);
     printf("Digite a quantidade de camisas Grandes: ");
-    scanf("%d", &CAMISA_G);
+    scanf("%d", &quantidade_camisas_g);
 
-    //Operações matematicas
-    RESULTADO_G = CAMISA_G * CAMISA_G_VALOR;
-    RESULTADO_M = CAMISA_M * CAMISA_M_VALOR;
-    RESULTADO_P = CAMISA_P * CAMISA_P_VALOR;
+    // Operações matemáticas
+    subtotal_p = quantidade_camisas_p * CAMISA_P_VALOR;
+    subtotal_m = quantidade_camisas_m * CAMISA_M_VALOR;
+    subtotal_g = quantidade_camisas_g * CAMISA_G_VALOR;
 
-    //saida do resultado
-    printf("Seu total é: %.0d", RESULTADO_G + RESULTADO_M + RESULTADO_P);
+    // Saída do resultado
+    printf("Seu total é: %d\n", subtotal_p + subtotal_m + subtotal_g);
+
     return 0;
 }

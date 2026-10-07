@@ -15,12 +15,10 @@ int main()
 
     //Saida pro usuario
     if(NUMERO_1 > NUMERO_2 || NUMERO_1 > NUMERO_3)
-    {
         printf("O primeiro número digitado é maior que pelo menos um dos outros dois números digitados");
-    }
+
     else
-    {
         printf("Ele é menor que os dois números digitados");
-    }
+
     return 0;
 }

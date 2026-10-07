@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
+    // Declaração das variáveis
+    float numero;
 
-    //Declaração das variaveis 
-    float NUMERO;
+    // Recebimento dos dados
+    printf("Digite um número: ");
+    scanf("%f", &numero);
 
-    //Recebimento dos dados
-    printf("Digite o primeiro número: ");
-    scanf("%f", &NUMERO);
+    // Saída dos resultados
+    printf("O número anterior é: %.1f\n", numero - 1);
+    printf("O seu número é: %.1f\n", numero);
+    printf("O próximo número é: %.1f\n", numero + 1);
 
-    //Saida dos resultados
-    printf("O numero anterior é: %.1f\n", NUMERO - 1);
-    printf("O seu numero é número: %.1f\n", NUMERO);
-    printf("O proximo número é: %.1f\n", NUMERO + 1);
     return 0;
 }

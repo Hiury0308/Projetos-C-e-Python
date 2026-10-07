@@ -13,12 +13,10 @@ int main()
 
     //Saida pro usuario
     if(NUMERO_1 > 10 || NUMERO_2 > 30)
-    {
         printf("A");
-    }
+
     else
-    {
         printf("B");
-    }
+
     return 0;
 }

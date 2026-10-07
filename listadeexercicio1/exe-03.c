@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
+    // Declaração das variáveis
+    float numero;
 
-    //Declaração das variaveis
-    float NUMERO;
+    // Recebimento do valor pelo usuário
+    printf("Digite um número: ");
+    scanf("%f", &numero);
 
-    //Recebimento do valor pelo ususario
-    printf("Digite a primeira nota: ");
-    scanf("%f", &NUMERO);
+    // Saída para o usuário
+    printf("O dobro do seu número é: %.1f\n", numero * 2);
+    printf("A metade do seu número é: %.1f\n", numero / 2);
 
-    //saida para o usuario.
-    printf("O dobro do seu numero é: %.1f\n", NUMERO * 2);
-    printf("A metade do seu numero é: %.1f\n", NUMERO / 2);
     return 0;
 }
