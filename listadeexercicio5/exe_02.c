@@ -7,11 +7,23 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o preco do produto 1: ");
-    scanf("%f", &preco_produto_1);
+    if(scanf("%f", &preco_produto_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o preco do produto 2: ");
-    scanf("%f", &preco_produto_2);
+    if(scanf("%f", &preco_produto_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o preco do produto 3: ");
-    scanf("%f", &preco_produto_3);
+    if(scanf("%f", &preco_produto_3) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(preco_produto_1 < 0 || preco_produto_2 < 0 || preco_produto_3 < 0)

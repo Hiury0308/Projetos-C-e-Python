@@ -7,7 +7,11 @@ int main()
 
     // Recebimento dos dados
     printf("Digite um número: ");
-    scanf("%f", &numero);
+    if (scanf("%f", &numero) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída dos resultados
     printf("O número anterior é: %.1f\n", numero - 1);

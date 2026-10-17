@@ -7,7 +7,11 @@ int main()
 
     // Recebimento dos valores pelo usuário
     printf("Digite a senha: ");
-    scanf("%d", &senha);
+    if (scanf("%d", &senha) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída para o usuário usando ternário
     senha == 12345678 ? printf("Acesso concedido") : printf("Acesso negado");

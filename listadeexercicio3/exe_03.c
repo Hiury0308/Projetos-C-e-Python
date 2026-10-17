@@ -8,15 +8,35 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%f", &numero_1);
+    if(scanf("%f", &numero_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o segundo numero: ");
-    scanf("%f", &numero_2);
+    if(scanf("%f", &numero_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o terceiro numero: ");
-    scanf("%f", &numero_3);
+    if(scanf("%f", &numero_3) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o quarto numero: ");
-    scanf("%f", &numero_4);
+    if(scanf("%f", &numero_4) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o quinto numero: ");
-    scanf("%f", &numero_5);
+    if(scanf("%f", &numero_5) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(!(numero_1 < numero_2) && (numero_3 == numero_4 && numero_5 < numero_1) || !(false))

@@ -7,9 +7,17 @@ int main()
 
     // Recebimento dos valores pelo usuário
     printf("Digite o primeiro numero: ");
-    scanf("%d", &numero_1);
+    if (scanf("%d", &numero_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o segundo numero: ");
-    scanf("%d", &numero_2);
+    if (scanf("%d", &numero_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída para o usuário
     if (numero_1 == numero_2)

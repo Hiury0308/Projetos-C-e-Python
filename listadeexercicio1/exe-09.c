@@ -8,9 +8,17 @@ int main()
 
     // Recebimento da quantidade de horas e do desconto
     printf("Informe a quantidade de horas trabalhadas: ");
-    scanf("%d", &horas_trabalhadas);
+    if (scanf("%d", &horas_trabalhadas) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Informe a porcentagem de desconto: ");
-    scanf("%f", &percentual_desconto);
+    if (scanf("%f", &percentual_desconto) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída para o usuário
     printf("Seu salário bruto é: R$%d\n", horas_trabalhadas * 20);

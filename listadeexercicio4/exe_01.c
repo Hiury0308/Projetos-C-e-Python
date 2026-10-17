@@ -7,7 +7,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%d", &numero_1);
+    if(scanf("%d", &numero_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(numero_1 % 2 == 0)

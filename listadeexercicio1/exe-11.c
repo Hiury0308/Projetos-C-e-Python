@@ -10,9 +10,17 @@ int main()
 
     // Recebimento dos dados pelo usuário
     printf("Digite o valor de A: ");
-    scanf("%f", &valor_a);
+    if (scanf("%f", &valor_a) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o valor de B: ");
-    scanf("%f", &valor_b);
+    if (scanf("%f", &valor_b) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Processamento para troca dos valores
     auxiliar = valor_a;

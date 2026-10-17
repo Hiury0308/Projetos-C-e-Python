@@ -7,11 +7,23 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o tamanho do primeiro lado do triangulo: ");
-    scanf("%f", &lado_1);
+    if(scanf("%f", &lado_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o tamanho do segundo lado do triangulo: ");
-    scanf("%f", &lado_2);
+    if(scanf("%f", &lado_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o tamanho do terceiro lado do triangulo: ");
-    scanf("%f", &lado_3);
+    if(scanf("%f", &lado_3) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(lado_1 <= 0 || lado_2 <= 0 || lado_3 <= 0)

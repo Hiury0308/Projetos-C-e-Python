@@ -13,11 +13,23 @@ int main()
 
     // Recebimento dos valores pelo usuário
     printf("Digite a quantidade de camisas Pequenas: ");
-    scanf("%d", &quantidade_camisas_p);
+    if (scanf("%d", &quantidade_camisas_p) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite a quantidade de camisas Médias: ");
-    scanf("%d", &quantidade_camisas_m);
+    if (scanf("%d", &quantidade_camisas_m) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite a quantidade de camisas Grandes: ");
-    scanf("%d", &quantidade_camisas_g);
+    if (scanf("%d", &quantidade_camisas_g) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Operações matemáticas
     subtotal_p = quantidade_camisas_p * CAMISA_P_VALOR;

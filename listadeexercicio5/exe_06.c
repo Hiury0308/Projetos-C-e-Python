@@ -8,7 +8,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite uma letra: ");
-    scanf(" %c", &letra);
+    if(scanf(" %c", &letra) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Processamento dos dados
     letra = (char)tolower((unsigned char)letra);

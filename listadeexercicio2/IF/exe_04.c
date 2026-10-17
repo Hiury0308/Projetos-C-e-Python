@@ -7,11 +7,23 @@ int main()
 
     // Recebimento dos valores pelo usuário
     printf("Digite o primeiro numero: ");
-    scanf("%f", &numero_1);
+    if (scanf("%f", &numero_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o segundo numero: ");
-    scanf("%f", &numero_2);
+    if (scanf("%f", &numero_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o terceiro numero: ");
-    scanf("%f", &numero_3);
+    if (scanf("%f", &numero_3) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída para o usuário
     if (numero_1 + numero_2 < numero_3)

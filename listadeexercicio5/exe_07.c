@@ -8,7 +8,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o turno em que voce estuda (M, V ou N): ");
-    scanf(" %c", &turno);
+    if(scanf(" %c", &turno) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Processamento dos dados
     turno = (char)toupper((unsigned char)turno);

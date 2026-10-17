@@ -8,11 +8,23 @@ int main()
 
     // Inputs do usuário
     printf("Digite o primeiro número: ");
-    scanf("%f", &numero_1);
+    if (scanf("%f", &numero_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite o segundo número: ");
-    scanf("%f", &numero_2);
+    if (scanf("%f", &numero_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Escolha a operação: \n1 - soma\n2 - sub\n3 - vezes\n4 - divisão\n\n");
-    scanf("%d", &escolha);
+    if (scanf("%d", &escolha) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Bloqueador para contas de divisão por zero
     if (numero_2 == 0 && escolha == 4)

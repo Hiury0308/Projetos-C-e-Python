@@ -7,7 +7,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o ano: ");
-    scanf("%d", &ano);
+    if(scanf("%d", &ano) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0)

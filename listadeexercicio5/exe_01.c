@@ -7,7 +7,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite a idade: ");
-    scanf("%d", &idade);
+    if(scanf("%d", &idade) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(idade < 5)

@@ -10,7 +10,11 @@ int main()
 
     // Recebimento do número de alunos
     printf("Digite a quantidade de alunos: ");
-    scanf("%d", &quantidade_alunos);
+    if (scanf("%d", &quantidade_alunos) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída para o usuário
     if (quantidade_alunos > CAPACIDADE)

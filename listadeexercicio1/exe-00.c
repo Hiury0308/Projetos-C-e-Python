@@ -7,7 +7,11 @@ int main()
 
     // Recebimento dos valores
     printf("Digite o valor da compra: ");
-    scanf("%f", &valor_compra);
+    if (scanf("%f", &valor_compra) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Operação necessária para o resultado
     valor_com_taxa = valor_compra + 10;

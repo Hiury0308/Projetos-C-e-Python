@@ -7,7 +7,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite a nota do aluno: ");
-    scanf("%f", &nota);
+    if(scanf("%f", &nota) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     //Saida pro usuario
     if(nota < 0 || nota > 10)

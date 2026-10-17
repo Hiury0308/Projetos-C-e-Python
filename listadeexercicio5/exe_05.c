@@ -9,7 +9,11 @@ int main()
 
     //Recebimento dos valores pelo usuario
     printf("Digite o nome do produto: ");
-    scanf(" %99[^\n]", descricao);
+    if(scanf(" %99[^\n]", descricao) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite a quantidade adquirida: ");
     if(scanf("%d", &quantidade) != 1 || quantidade <= 0)
     {

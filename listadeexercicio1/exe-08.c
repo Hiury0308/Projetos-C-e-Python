@@ -7,7 +7,11 @@ int main()
 
     // Recebimento da quantia de dias
     printf("Digite a quantia de dias trabalhados: ");
-    scanf("%d", &dias_trabalhados);
+    if (scanf("%d", &dias_trabalhados) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Operações matemáticas
     valor_bruto = dias_trabalhados * 30;

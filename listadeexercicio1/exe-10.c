@@ -7,7 +7,11 @@ int main()
 
     // Recebimento do valor pelo usuário
     printf("Insira o valor do produto: ");
-    scanf("%f", &valor_original);
+    if (scanf("%f", &valor_original) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Processamento dos resultados
     valor_reducao_original = valor_original - (valor_original * 0.30);

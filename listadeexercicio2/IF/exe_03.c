@@ -7,7 +7,11 @@ int main()
 
     // Recebimento dos valores pelo usuário
     printf("Digite um numero: ");
-    scanf("%f", &numero);
+    if (scanf("%f", &numero) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Saída para o usuário
     if (numero > 100)

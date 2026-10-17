@@ -7,11 +7,23 @@ int main()
 
     // Recebimento dos valores pelo usuário
     printf("Digite a primeira nota: ");
-    scanf("%f", &nota_1);
+    if (scanf("%f", &nota_1) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite a segunda nota: ");
-    scanf("%f", &nota_2);
+    if (scanf("%f", &nota_2) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
     printf("Digite a terceira nota: ");
-    scanf("%f", &nota_3);
+    if (scanf("%f", &nota_3) != 1)
+    {
+        printf("Entrada invalida\n");
+        return 1;
+    }
 
     // Operação para chegar ao resultado
     media = (nota_1 + nota_2 + nota_3) / 3;
