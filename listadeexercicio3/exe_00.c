@@ -3,16 +3,16 @@
 int main() 
 {
     //Declaração das variaveis
-    float NUMERO_1, NUMERO_2;
+    float numero_1, numero_2;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%f", &NUMERO_1);
+    scanf("%f", &numero_1);
     printf("Digite o segundo numero: ");
-    scanf("%f", &NUMERO_2);
+    scanf("%f", &numero_2);
 
     //Saida pro usuario
-    if(NUMERO_1 > 10 || NUMERO_2 > 30)
+    if(numero_1 > 10 || numero_2 > 30)
         printf("A");
 
     else

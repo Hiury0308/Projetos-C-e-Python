@@ -3,16 +3,16 @@
 int main() 
 {
     //Declaração das variaveis
-    int NUMERO_1, NUMERO_2;
+    int numero_1, numero_2;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%d", &NUMERO_1);
+    scanf("%d", &numero_1);
     printf("Digite o segundo numero: ");
-    scanf("%d", &NUMERO_2);
+    scanf("%d", &numero_2);
 
     //Saida pro usuario
-    printf("%d", NUMERO_1  % NUMERO_2);
+    printf("%d", numero_1  % numero_2);
    
     return 0;
 }

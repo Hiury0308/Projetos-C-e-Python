@@ -12,7 +12,9 @@ int main()
     scanf("%f", &numero_2);
 
     // Saída para o usuário usando ternário
-    printf("%.0f", numero_1 > numero_2 ? numero_1 : numero_2);
+    numero_1 > numero_2 ? printf("Primeiro numero é maior: %f", numero_1) :
+    numero_1 < numero_2 ? printf("Segundo numero é maior: %f", numero_2) :
+                          printf("Numeros iguais");
 
     return 0;
 }

@@ -11,14 +11,21 @@ int main()
     printf("Digite o nome do produto: ");
     scanf(" %99[^\n]", descricao);
     printf("Digite a quantidade adquirida: ");
-    scanf("%d", &quantidade);
+    if(scanf("%d", &quantidade) != 1 || quantidade <= 0)
+    {
+        printf("Erro: quantidade invalida\n");
+        return 1;
+    }
+
     printf("Digite o preco unitario: ");
-    scanf("%f", &preco_unitario);
+    if(scanf("%f", &preco_unitario) != 1 || preco_unitario < 0)
+    {
+        printf("Erro: preco invalido\n");
+        return 1;
+    }
 
     //Processamento dos dados
-    if(quantidade <= 0 || preco_unitario < 0)
-        percentual_desconto = -1;
-    else if(quantidade < 5)
+    if(quantidade < 5)
         percentual_desconto = 0.02;
     else if(quantidade <= 10)
         percentual_desconto = 0.03;
@@ -30,10 +37,7 @@ int main()
     total_pagar = preco_total - valor_desconto;
 
     //Saida pro usuario
-    if(percentual_desconto < 0)
-        printf("Quantidade ou preco invalido");
-    else
-        printf("Produto: %s\nPreco total sem desconto: R$ %.2f\nDesconto: R$ %.2f\nTotal a pagar: R$ %.2f", descricao, preco_total, valor_desconto, total_pagar);
+    printf("Produto: %s\nPreco total sem desconto: R$ %.2f\nDesconto: R$ %.2f\nTotal a pagar: R$ %.2f", descricao, preco_total, valor_desconto, total_pagar);
 
     return 0;
 }

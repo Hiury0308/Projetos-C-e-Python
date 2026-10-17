@@ -3,20 +3,20 @@
 int main() 
 {
     //Declaração das variaveis
-    float NUMERO_1, NUMERO_2;
+    float numero_1, numero_2;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o primeiro numero: ");
-    scanf("%f", &NUMERO_1);
+    scanf("%f", &numero_1);
     printf("Digite o segundo numero: ");
-    scanf("%f", &NUMERO_2);
+    scanf("%f", &numero_2);
 
     //Saida pro usuario
-    if(NUMERO_1 == 1 && NUMERO_2 == 1)
-        printf("%.0f", NUMERO_1 + NUMERO_2);
+    if(numero_1 == 1 && numero_2 == 1)
+        printf("%.0f", numero_1 + numero_2);
 
     else
-        printf("%.0f", NUMERO_1 - NUMERO_2);
+        printf("%.0f", numero_1 - numero_2);
 
     return 0;
 }

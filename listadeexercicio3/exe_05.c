@@ -3,16 +3,16 @@
 int main() 
 {
     //Declaração das variaveis
-    float ALTURA, IDADE;
+    float altura, idade;
 
     //Recebimento dos valores pelo usuario
     printf("Digite a altura: ");
-    scanf("%f", &ALTURA);
+    scanf("%f", &altura);
     printf("Digite a idade: ");
-    scanf("%f", &IDADE);
+    scanf("%f", &idade);
 
     //Saida pro usuario
-    if(ALTURA > 180 && IDADE > 18)
+    if(altura > 180 && idade > 18)
         printf("Acesso permitido");
 
     else
