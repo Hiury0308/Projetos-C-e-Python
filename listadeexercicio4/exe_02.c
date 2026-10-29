@@ -3,21 +3,17 @@
 int main() 
 {
     //Declaração das variaveis
-    int ano;
+    int ANO;
 
     //Recebimento dos valores pelo usuario
     printf("Digite o ano: ");
-    if(scanf("%d", &ano) != 1)
-    {
-        printf("Entrada invalida\n");
-        return 1;
-    }
+    scanf("%d", &ANO);
 
     //Saida pro usuario
-    if(ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0)
+    if(ANO % 400 == 0 || ANO % 4 == 0 && ANO % 100 != 0)
         printf("O ano digitado é bissexto");
     else
         printf("O ano digitado não é bissexto");
-
+        
     return 0;
 }

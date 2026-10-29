@@ -9,7 +9,7 @@ int main()
     printf("1 - cadastrar\n2 - logar\n3 - sair\nDigite um numero de 1 a 3: ");
     if(scanf("%d", &numero) != 1)
     {
-        printf("Numero invalido\n");
+        printf("Valor invalido\n");
         return 1;
     }
 
@@ -17,17 +17,17 @@ int main()
     switch (numero)
     {
     case 1:
-        printf("Cadastrar");
+        printf("cadastrar");
         break;
     case 2:
-        printf("Logar");
+        printf("logar");
         break;
     case 3:
-        printf("Sair");
+        printf("sair");
         break;
     
     default:
-        printf("Numero invalido\n");
+        printf("Valor invalido\n");
         return 1;
     }
     

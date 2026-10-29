@@ -1,62 +1,51 @@
 #include <stdio.h>
 
-int main()
+int main() 
 {
-    // Declaração das variáveis
-    int escolha;
-    float numero_1, numero_2, resultado;
+    //declaração dar variaveis
+    int ESCOLHA;
+    float NUMERO_1, NUMERO_2, RESULTADO;
 
-    // Inputs do usuário
+    //inputs do usuario
     printf("Digite o primeiro número: ");
-    if (scanf("%f", &numero_1) != 1)
-    {
-        printf("Entrada invalida\n");
-        return 1;
-    }
-    printf("Digite o segundo número: ");
-    if (scanf("%f", &numero_2) != 1)
-    {
-        printf("Entrada invalida\n");
-        return 1;
-    }
-    printf("Escolha a operação: \n1 - soma\n2 - sub\n3 - vezes\n4 - divisão\n\n");
-    if (scanf("%d", &escolha) != 1)
-    {
-        printf("Entrada invalida\n");
-        return 1;
-    }
+    scanf("%f", &NUMERO_1);
+    printf("Digite o primeiro número: ");
+    scanf("%f", &NUMERO_2);
+    printf("Escolha a operação: \n1 - soma\n2 - sub\n3 - vezes\n4 - divisao\n\n");
+    scanf("%d", &ESCOLHA);
 
-    // Bloqueador para contas de divisão por zero
-    if (numero_2 == 0 && escolha == 4)
+    //Bloqueador para contas de divisor com 0
+    if (NUMERO_2 == 0) 
     {
-        printf("\nNão é permitido dividir por zero\n");
-
+        if (ESCOLHA == 4) 
+        {
+        printf("\nNão é permitido dividar por zero");
         return 0;
+        }
     }
 
-    // Retorno dos resultados baseado na escolha do usuário
-    if (escolha == 1)
+    //Retorno dos resultados baseado na escolha do usuario
+    if (ESCOLHA == 1) 
     {
-        resultado = numero_1 + numero_2;
-        printf("A soma dos números é: %f\n", resultado);
+        RESULTADO = NUMERO_1 + NUMERO_2;
+        printf("A soma dos numeros é: %f\n", RESULTADO);
     }
-    else if (escolha == 2)
+    else if (ESCOLHA == 2) 
     {
-        resultado = numero_1 - numero_2;
-        printf("A subtração dos números é: %f\n", resultado);
+        RESULTADO = NUMERO_1 - NUMERO_2;
+        printf("A subtração dos numeros é: %f\n", RESULTADO);
     }
-    else if (escolha == 3)
+    else if (ESCOLHA == 3) 
     {
-        resultado = numero_1 * numero_2;
-        printf("A multiplicação dos números é: %f\n", resultado);
+        RESULTADO = NUMERO_1 * NUMERO_2;
+        printf("A mutiplicação dos numeros é: %f\n", RESULTADO);
     }
-    else if (escolha == 4)
+    else if (ESCOLHA == 4) 
     {
-        resultado = numero_1 / numero_2;
-        printf("A divisão dos números é: %f\n", resultado);
+        RESULTADO = NUMERO_1 / NUMERO_2;
+        printf("A divisão dos numeros é: %f\n", RESULTADO);
     }
-    else
-        printf("Nenhuma operação foi escolhida\n");
-
+    else printf("Nenhuma operação foi escolhida");
+    
     return 0;
 }
